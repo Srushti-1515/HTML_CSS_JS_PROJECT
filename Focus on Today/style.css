@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  /* width: 100vw; */
+  background-color: #F2F9ED;
+  font-family: 'poppins',sans-serif;
+}
+main {
+  /* margin: 16px; */
+  padding: 0 16px 32px ;
+}
+
+.heading  {
+  font-size: 4rem;
+  color: #2b6100;
+  text-align: center;
+}
+
+.heading span {
+  color:#3a2b11 ;
+}
+
+.container {
+background-color: #ffffff;
+min-height: 750px;
+max-width: 660px;
+border-radius: 15px;
+margin-inline:auto ;
+padding: 32px 48px 32px 48px;
+box-shadow: 0 0 10px 5px rgba(0,163,0,0.1);
+
+}
+
+.sun-icon {
+  margin-left: 16px;
+  vertical-align:middle;
+
+}
+
+.para1 {
+  font-size: 14px;
+  color:#858585 ;
+  margin-bottom: 20px;      
+  
+}
+.progress-bar {
+  height: 30px;
+  background-color:#e9f2e2 ;
+  border-radius: 15px;
+}
+
+.progress-change {
+  height: 100%;
+  width: 66%;
+  background-color:#48a300 ;
+  border-radius: 15px;
+  font-weight: 500px;
+  font-size: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  
+}
+
+.error-msg {
+  color: #fe9090;
+  font-size: 14px;
+  
+  /* margin-block: 20px;  is used for taking margin from top and bottom */
+}
+
+.goal {
+  height: 82px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #ffffff;
+  margin-bottom: 42px;
+  
+}
+
+.custom-checkbox {
+  height: 24px;
+  width: 24px;
+  border: 1px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0; /* used for not to shrink the size of checkbox if we open in mobiles or diff devices */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  display: none;
+}
+    
+.goal-input {
+  border: none;
+  outline: none;
+  padding-left: 22px;
+  font-family: inherit;
+  font-size: 16px;
+  /* height: 100%; */
+  font-weight: 500px;
+  align-self: stretch;
+  /* background-color: palevioletred; */
+  /* flex-grow: 1; if we use flex-grow property insted of width: then when we open it on mobile width will skirin /out of the box ; */
+  width: 100%;
+}
+
+.goal-input::placeholder {  /*to change plce holder color */
+color: #d9d9d9;
+}
+
+.msg1 {
+  color: #000000;
+  margin-top: 56px;
+  text-align: center;
+  font-weight: 500px;
+}
+
+.msg2 {
+  color: #858585;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.completed .custom-checkbox {
+  background-color: #48a300;
+  border-color: #48a300;
+
+}
+
+.completed .check-icon {
+  display: block  ;
+}
+ 
+.completed .goal-input {
+  color: #48a300;
+  text-decoration: line-through;
+}
+
+
+
+@media (max-width: 768px) {
+    .heading {
+      font-size: 32px;
+    }
+
+    .container  {
+      padding: 16px 32px;
+    }
+
+    .goal {
+      height: 64px;
+      margin-bottom: 24px;
+      border-radius: 12px;
+    }
+    .custome-checkbox {
+      height: 20px;
+      width: 20px;
+
+    }
+
+    .msg2 {
+      margin-top: 35px;
+    }
+ 
+    .progress-bar {
+      height: 22px  ;
+    } 
+}
+
+
